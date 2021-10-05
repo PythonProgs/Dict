@@ -1,19 +1,6 @@
-def data_extract():
-    member = dict()
-    member['name'] = 'Michael'
-    member['dob'] = '19 October 1998'
-    member['address'] = 'Owl Street'
-    member['gender'] = 'Male'
-    return member
-    
-def data(result):
-    print(f"Name : {result['name']}")
-    print(f"Date of Birth : {result['dob']}")
-    print(f"Address : {result['address']}")
-    print(f"Gender : {result['gender']}")
-
+import Package
 
 if __name__ == '__main__':
     print("Main Program")
-    result = data_extract()
-    data(result)
+    result = Package.data_extract()
+    Package.data(result)
